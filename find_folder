@@ -1,0 +1,9 @@
+#!/bin/bash
+
+clear
+if [ -e find_folder ]
+   then
+   echo 'This folder exists'
+   else 
+   echo 'This folder does not exit'
+fi 
