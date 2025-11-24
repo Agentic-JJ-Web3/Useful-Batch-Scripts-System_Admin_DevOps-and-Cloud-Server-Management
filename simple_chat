@@ -2,7 +2,7 @@
 
 clear
 echo
-echo "What is yor name"
+echo "What is your name"
 echo
 read a
 echo
@@ -10,7 +10,7 @@ echo
 echo Hello $a 
 echo
 
-echo "Do you like working in tech? (y/n) "
+echo "Do you like working in tech? (y/n)"
 read Like
 echo
 
