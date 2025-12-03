@@ -10,3 +10,4 @@ echo "Memory: $(free -h | grep 'Mem' | awk '{print $2}')"
 echo "Disk Space: $(df -h | grep '^/dev' | awk '{print $1, $5, $6}' )"
 
 
+
