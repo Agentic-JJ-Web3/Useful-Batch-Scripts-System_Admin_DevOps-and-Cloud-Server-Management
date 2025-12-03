@@ -16,7 +16,7 @@ Note: This repository is created for learning purposes. Run any of my scripts wi
 
 A curated collection of **bash scripts** for **DevOps**, **Cloud Operations**, and **System Administration**. Scripts are organized by difficulty level as I progress through my learning journey.
 
-**Created:** December 2025 | **Status:** Active Learning
+**Created:** November 2025 | **Status:** Active Learning
 
 ---
 
