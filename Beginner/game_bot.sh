@@ -4,15 +4,16 @@
 
 # Function to display a friendly welcome message
 echo "==============================="
-echo " Welcome to Friendly Chat Bot! "
+echo " Welcome to my Friendly Chat Bot! "
 echo "==============================="
 
 # Ask for user's name
 read -p "Hi there! What's your name? " USERNAME
 echo "Nice to meet you, $USERNAME!"
-
+clear
 # Ask about user's passion
 read -p "What are you passionate about, $USERNAME? " PASSION
+clear
 echo "Wow, $PASSION sounds awesome! Keep it up, $USERNAME."
 
 # Main loop for the game
