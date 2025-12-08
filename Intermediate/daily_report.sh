@@ -14,3 +14,8 @@ echo "---- Disk Usage ----" >> "$REPORT_FILE"
 df -h >> "$REPORT_FILE"
 echo >> "$REPORT_FILE"
 
+# Failed Logins Attempts Section
+echo "---- Failed Logins Atempt ----"
+lastb | head -10 >> "$REPORT_FILE"  # Displays a list of last logged users focusing on the failed login attempts
+echo >> "$REPORT_FILE" # Gives line spacing
+
