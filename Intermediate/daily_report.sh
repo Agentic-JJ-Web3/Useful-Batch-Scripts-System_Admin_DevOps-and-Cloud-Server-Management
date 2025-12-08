@@ -24,5 +24,5 @@ echo "---- Top 5 Active Processes ----" >> "$REPORT_FILE"
 ps aux --sort=-%cpu |  head -6 >> "$REPORT_FILE"
 echo >> "$REPORT_FILE"
 
-
+echo "REPORT GENERATED at $REPORT_FILE"
 
