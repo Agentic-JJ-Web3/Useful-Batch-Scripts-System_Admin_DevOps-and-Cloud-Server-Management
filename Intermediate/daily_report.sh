@@ -15,7 +15,14 @@ df -h >> "$REPORT_FILE"
 echo >> "$REPORT_FILE"
 
 # Failed Logins Attempts Section
-echo "---- Failed Logins Atempt ----"
-lastb | head -10 >> "$REPORT_FILE"  # Displays a list of last logged users focusing on the failed login attempts
+echo "---- Failed Logins Atempt ----" >> "$REPORT_FILE"
+lastb | head -10 >> "$REPORT_FILE" 2>/dev/null || echo "No failed Login data available" >> "$REPORT_FILE" # Displays a list of last logged users focusing on the failed login attempts
 echo >> "$REPORT_FILE" # Gives line spacing
+
+# Active Processes Section
+echo "---- Top 5 Active Processes ----" >> "$REPORT_FILE"
+ps aux --sort=-%cpu |  head -6 >> "$REPORT_FILE"
+echo >> "$REPORT_FILE"
+
+
 
