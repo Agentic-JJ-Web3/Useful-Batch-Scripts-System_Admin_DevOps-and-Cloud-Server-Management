@@ -26,3 +26,16 @@ echo >> "$REPORT_FILE"
 
 echo "REPORT GENERATED at $REPORT_FILE"
 
+# ...existing code...
+
+# Email Section
+TO="your@email.com" # <-- Replace with your email address
+SUBJECT="Daily System Report for $(hostname) - $(date +%Y-%m-%d)"
+
+# Send the report via email
+if command -v mail >/dev/null 2>&1; then
+    mail -s "$SUBJECT" "$TO" < "$REPORT_FILE"
+    echo "Report emailed to $TO"
+else
+    echo "mail command not found. Please install mailutils or mailx to enable emailing."
+fi
